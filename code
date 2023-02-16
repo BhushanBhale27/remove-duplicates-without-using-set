@@ -1,0 +1,19 @@
+function removeDuplicates(arr) {
+  let uniqueArr = [];
+
+  // loop through the input array
+  for (let i = 0; i < arr.length; i++) {
+    // check if the current element is not in the uniqueArr
+    if (!uniqueArr.includes(arr[i])) {
+      // if not, add it to the uniqueArr
+      uniqueArr.push(arr[i]);
+    }
+  }
+
+  return uniqueArr;
+}
+
+// Example usage:
+let arr = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArr = removeDuplicates(arr);
+console.log(uniqueArr); // Output: [1, 2, 3, 4, 5]
